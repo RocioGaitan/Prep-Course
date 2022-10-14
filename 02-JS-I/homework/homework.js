@@ -194,7 +194,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "Soy " + nombre + " " + apellido
+  return `Soy ${nombre} ${apellido}`
 }
 
 function obtenerSaludo(nombre) {
@@ -221,9 +221,8 @@ function retornarPerimetro(lado) {
 function areaDelTriangulo(base, altura) {
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return base * altura
+return (base * altura) / 2
 }
-
 
 function deEuroAdolar(euro) {
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
@@ -239,7 +238,13 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra.length < 1) {
+    return "Es vocal"
+  } else if (letra.length > 1) {
+    return "Dato incorrecto"
+  } else {
+    return "Dato incorrecto"
+  }
 }
 
 
