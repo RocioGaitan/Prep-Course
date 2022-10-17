@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { straightThroughBufferTask } = require("simple-git/src/lib/tasks/task")
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -14,7 +16,7 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
     return "Allowed"
-  } else (edad < 18) {
+  } else if (edad < 18) {
     return "Not allowed"
   }
 }
@@ -47,7 +49,7 @@ function saludo(idioma) {
     return "Ni Hao!"
   } else if (idioma === "ingles") {
     return "Hello!"
-  } else (idioma === "undefined") {
+  } else if (idioma === "undefined") {
     return "Hola"
   }
 }
@@ -60,18 +62,45 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color) {
+    case "blue"
+   console.log("This is blue")
+   break;
+   case "red"
+   console.log("This is red")
+   break;
+   case "green"
+   console.log("This is green")
+   break;
+   case "orange"
+   console.log("This orange")
+   break;
+   default:
+    console.log("Color not found")
+    break;
+  }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero === 10 && numero === 5) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero < 50 && numero > 20) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function esEntero(numero) {
@@ -82,6 +111,13 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero === 0.8) {
+    return false
+  } else if (numero === 1) {
+    return true
+  } else if ( numero === -10) {
+    return true
+  }
 }
 
 function fizzBuzz(numero) {
@@ -89,6 +125,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -98,15 +135,15 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-}
+  
 
-function esPrimo(numero) {
-  // Devuelve "true" si "numero" es primo
-  // De lo contrario devuelve "falso"
-  // Pista: un número primo solo es divisible por sí mismo y por 1
-  // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
-}
+  (numero) => {
+    // Devuelve "true" si "numero" es primo
+    // De lo contrario devuelve "falso"
+    // Pista: un número primo solo es divisible por sí mismo y por 1
+    // Pista 2: Puedes resolverlo usando un bucle `for`
+    // Nota: Los números 0 y 1 NO son considerados números primos
+  }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
