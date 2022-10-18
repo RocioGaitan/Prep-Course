@@ -7,7 +7,11 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
 }
 
 function mayoriaDeEdad(edad) {
@@ -49,7 +53,7 @@ function saludo(idioma) {
     return "Ni Hao!"
   } else if (idioma === "ingles") {
     return "Hello!"
-  } else if (idioma === "undefined") {
+  } else {
     return "Hola"
   }
 }
@@ -62,22 +66,23 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  switch (color) {
-    case "blue"
-   console.log("This is blue")
-   break;
-   case "red"
-   console.log("This is red")
-   break;
-   case "green"
-   console.log("This is green")
-   break;
-   case "orange"
-   console.log("This orange")
-   break;
-   default:
-    console.log("Color not found")
+  var colores = (color)
+  switch (colores) {
+    case 1: "blue"
+    console.log("This is blue");
     break;
+    case 2: "red"
+    console.log("This is red");
+    break;
+    case 3: "green"
+    console.log("This is green");
+    break;
+    case 4: "orange";
+    console.log("This is orange");
+    break;
+    default:
+      console.log("Color not found");
+      break;
   }
 }
 
@@ -137,7 +142,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   
 
-  (numero) => {
+  function (numero) {
     // Devuelve "true" si "numero" es primo
     // De lo contrario devuelve "falso"
     // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -145,7 +150,7 @@ function operadoresLogicos(num1, num2, num3) {
     // Nota: Los números 0 y 1 NO son considerados números primos
   }
 
-function esVerdadero(valor){
+function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
@@ -190,5 +195,5 @@ module.exports = {
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
-  doWhile
-};
+  doWhile:
+}
