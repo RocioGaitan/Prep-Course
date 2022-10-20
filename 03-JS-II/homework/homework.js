@@ -24,7 +24,7 @@ function mayoriaDeEdad(edad) {
     return "Not allowed"
   }
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -66,23 +66,17 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  var colores = (color)
-  switch (colores) {
-    case 1: "blue"
-    console.log("This is blue");
-    break;
-    case 2: "red"
-    console.log("This is red");
-    break;
-    case 3: "green"
-    console.log("This is green");
-    break;
-    case 4: "orange";
-    console.log("This is orange");
-    break;
+  switch (color) {
+    case "blue":
+      return "This is blue";
+    case "red":
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
     default:
-      console.log("Color not found");
-      break;
+      return "Color not found";
   }
 }
 
@@ -116,12 +110,12 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero === 0.8) {
-    return false
-  } else if (numero === 1) {
-    return true
-  } else if ( numero === -10) {
-    return true
+  if (numero.Mathfloor === numero) {
+    return false;
+  } else if (numero > 1) {
+    return true;
+  } else if (numero < 0) {
+    return true;
   }
 }
 
@@ -140,9 +134,9 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  
 
-  function (numero) {
+
+  function esPrimo(numero) {
     // Devuelve "true" si "numero" es primo
     // De lo contrario devuelve "falso"
     // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -150,50 +144,50 @@ function operadoresLogicos(num1, num2, num3) {
     // Nota: Los números 0 y 1 NO son considerados números primos
   }
 
-function esVerdadero(valor) {
-  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
-  //si su valor es true y “Soy falso” si su valor es false.
-  //Escribe tu código aquí
+  function esVerdadero(valor) {
+    //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+    //si su valor es true y “Soy falso” si su valor es false.
+    //Escribe tu código aquí
 
-}
+  }
 
-function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
-  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
-}
+  function tablaDelSeis() {
+    //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
+    //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
+    //Escribe tu código aquí   
 
-function tieneTresDigitos(numero){
-  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
-  //Escribe tu código aquí
-  
-}
+  }
 
-function doWhile(numero) {
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
-  //Retornar el valor final.
-  //Usar el bucle do ... while.
-}
+  function tieneTresDigitos(numero) {
+    //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
+    //Escribe tu código aquí
+
+  }
+
+  function doWhile(numero) {
+    //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+    //Retornar el valor final.
+    //Usar el bucle do ... while.
+  }
 
 
-// No modificar nada debajo de esta línea
-// --------------------------------
+  // No modificar nada debajo de esta línea
+  // --------------------------------
 
-module.exports = {
-  obtenerMayor,
-  mayoriaDeEdad,
-  conection,
-  saludo,
-  colors,
-  esDiezOCinco,
-  estaEnRango,
-  esEntero,
-  fizzBuzz,
-  operadoresLogicos,
-  esPrimo,
-  esVerdadero,
-  tablaDelSeis,
-  tieneTresDigitos,
-  doWhile:
-}
+  module.exports = {
+    obtenerMayor,
+    mayoriaDeEdad,
+    conection,
+    saludo,
+    colors,
+    esDiezOCinco,
+    estaEnRango,
+    esEntero,
+    fizzBuzz,
+    operadoresLogicos,
+    esPrimo,
+    esVerdadero,
+    tablaDelSeis,
+    tieneTresDigitos,
+    doWhile
+ }
