@@ -182,33 +182,46 @@ function operadoresLogicos(num1, num2, num3) {
     //Escribe tu código aquí
 if (valor === true) {
   return "Soy verdadero";
-} else (valor === false) {
+} else (valor === false);
   return "Soy falso";
 }
-  }
+  
 
   function tablaDelSeis() {
     //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
     //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
     //Escribe tu código aquí   
- let arreglo = [];
- for (let i = 0; i < 60; i++) {
-  let multiplicar = i * 6;
-  return arreglo[i]
- }
+    let tablaDel6 = [];
+    for (let i = 0; i < 11; i++) {
+      tablaDel6.push(6 * i)
+    } 
+    return tablaDel6
+
   }
 
   function tieneTresDigitos(numero) {
     //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
     //Escribe tu código aquí
-
+   if (numero > 99 && numero < 1000) {
+    return true;
+   } 
+   return false;
   }
 
   function doWhile(numero) {
     //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
     //Retornar el valor final.
     //Usar el bucle do ... while.
-  }
+    var a = numero;
+    var i = 1;
+    do {
+     var a = a + 5
+     var i = i + 1
+    } while (i < 9) 
+    return a;
+    }
+  
+  
 
 
   // No modificar nada debajo de esta línea
